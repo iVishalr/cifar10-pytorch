@@ -1,4 +1,4 @@
-# CIFAR 10 PyTorch
+# CIFAR-10 PyTorch
 
 A PyTorch implementation for training a medium sized convolutional neural network on CIFAR-10 dataset. [CIFAR-10](https://www.cs.toronto.edu/~kriz/cifar.html) dataset is a subset of the 80 million tiny image dataset (taken down). Each image in CIFAR-10 dataset has a dimension of 32x32. There are 60000 coloured images in the dataset. 50,000 images form the training data and the remaining 10,000 images form the test data.  The training data is divided into 5 batches each with 10,000 images. However, I have combined all the batches to form a single training set which allows us to have custom batch sizes. CIFAR-10 has 10 categories. Each category having 6000 images. 
 
