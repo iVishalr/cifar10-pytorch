@@ -1,5 +1,8 @@
 # CIFAR-10 PyTorch
 
+<img src="https://github.com/iVishalr/cifar10-pytorch/blob/main/log/images/CIFAR10.png" alt="CIFAR10-image" height="300px" width="1000px"></img>
+
+
 A PyTorch implementation for training a medium sized convolutional neural network on CIFAR-10 dataset. [CIFAR-10](https://www.cs.toronto.edu/~kriz/cifar.html) dataset is a subset of the 80 million tiny image dataset (taken down). Each image in CIFAR-10 dataset has a dimension of 32x32. There are 60000 coloured images in the dataset. 50,000 images form the training data and the remaining 10,000 images form the test data.  The training data is divided into 5 batches each with 10,000 images. However, I have combined all the batches to form a single training set which allows us to have custom batch sizes. CIFAR-10 has 10 categories. Each category having 6000 images. 
 
 ## Model Architecture
@@ -32,7 +35,7 @@ Finally, we flatten these feature maps and pass them through fully connected lay
 
 ## Training
 
-CIFAR-10 dataset is a hard dataset. After training for a long time, the model could achieve an Top-1 accuracy of 82% and a Top-3 accuracy of % and a Top-5 accuracy of 98% on the test data. Training for longer time will improve the Top-1 and Top-3 scores. Two models are available.
+CIFAR-10 dataset is a hard dataset. After training for a long time, the model could achieve an Top-1 accuracy of 82% and a Top-3 accuracy of % and a Top-5 accuracy of 98% on the test data. Training for longer time will improve the Top-1 and Top-3 scores. Two models are available in the [models folder](https://github.com/iVishalr/cifar10-pytorch/tree/main/models).
 
 Total Training Time took about 4hrs on RTX 3080 10GB GPU. This includes model inference after every epoch as well as model checkpointing when we achieve a lower test loss than the previous best.
 
@@ -44,7 +47,7 @@ Total Training Time took about 4hrs on RTX 3080 10GB GPU. This includes model in
 4. matplotlib
 5. pillow
 
-Download PyTorch from their website depending on the hardware configurations you have.
+Download PyTorch from their [website](https://pytorch.org/get-started/locally/) depending on the hardware configurations you have.
 
 ## Execution
 
@@ -54,7 +57,7 @@ In terminal, type the following command to start the training process.
 $ python CIFAR10.py
 ```
 
-Alternatively, you can also train the model in the notebook verison of this project. In the notebook version, I have explained some of the steps taken in training the model which includes things like data visualization, hyperparameter optimization, setting up training + evaluation pipelines and much more. Do check it out. 
+Alternatively, you can also train the model in the [notebook](https://github.com/iVishalr/cifar10-pytorch/blob/main/notebook/CIFAR10.ipynb) verison of this project. In the notebook version, I have explained some of the steps taken in training the model which includes things like data visualization, hyperparameter optimization, setting up training + evaluation pipelines and much more. Do check it out. 
 
 *Note : If you are on windows, please use the python scripts to train the model. Training on Jupyter Notebook is very slow.*
 
