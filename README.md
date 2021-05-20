@@ -77,3 +77,7 @@ keywords= {Dataset},
 terms= {}
 }
 ```
+
+## License
+
+MIT
