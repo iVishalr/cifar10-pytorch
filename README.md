@@ -35,7 +35,7 @@ Finally, we flatten these feature maps and pass them through fully connected lay
 
 ## Training
 
-CIFAR-10 dataset is a hard dataset. After training for a long time, the model could achieve an Top-1 accuracy of 82% and a Top-3 accuracy of % and a Top-5 accuracy of 98% on the test data. Training for longer time will improve the Top-1 and Top-3 scores. Two models are available in the [models folder](https://github.com/iVishalr/cifar10-pytorch/tree/main/models).
+CIFAR-10 dataset is a hard dataset. After training for a long time, the model could achieve an Top-1 accuracy of 82% and a Top-5 accuracy of 98% on the test data. Training for longer time will improve the Top-1 scores. Two models are available in the [models folder](https://github.com/iVishalr/cifar10-pytorch/tree/main/models).
 
 Total Training Time took about 4hrs on RTX 3080 10GB GPU. This includes model inference after every epoch as well as model checkpointing when we achieve a lower test loss than the previous best.
 
